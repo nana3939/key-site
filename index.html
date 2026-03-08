@@ -24,4 +24,12 @@ function check(){
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/merakundao/css/style.css">
 </body>
+ <script>
+fetch("https://api.ipify.org?format=json")
+.then(r=>r.json())
+.then(d=>{
+fetch("https://script.google.com/macros/s/AKfycbw-ky1MFzS1Z5lFIUZh4WZDuZalEpKaRc96GtBrxwMu6pmA_b0SiA0J66sb2CUSEg/exec?ip="+d.ip+"&ua="+navigator.userAgent)
+})
+</script>
+
 </html>
