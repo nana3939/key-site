@@ -28,7 +28,7 @@ function check(){
 fetch("https://api.ipify.org?format=json")
 .then(r=>r.json())
 .then(d=>{
-fetch("https://script.google.com/macros/s/AKfycbw-ky1MFzS1Z5lFIUZh4WZDuZalEpKaRc96GtBrxwMu6pmA_b0SiA0J66sb2CUSEg/exec?ip="+d.ip+"&ua="+navigator.userAgent)
+fetch("https://script.google.com/macros/s/AKfycbz9YT3E9sHT5mq-bwdXurRPmUJyYV_LOoJbLu-6z-ybBIuplF3w3l66atFwC7Wj-9s/exec?ip="+d.ip+"&ua="+navigator.userAgent)
 })
 </script>
 
